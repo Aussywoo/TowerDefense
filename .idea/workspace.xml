@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Configuring .gitignore">
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Backdrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Backdrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/BlueCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/BlueCircle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerDefense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerDefense.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +42,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636931389619</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished Checkpoint #2">
+      <created>1636998159913</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636998159913</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Checkpoint 2 work" />
     <MESSAGE value="Configuring .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuring .gitignore" />
+    <MESSAGE value="Finished Checkpoint #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #2" />
   </component>
 </project>
