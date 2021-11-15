@@ -9,7 +9,6 @@ import javax.swing.SwingUtilities;
 
 public class TowerDefense
 {
-    //Push
     public static void main(String[] args) throws InvocationTargetException, InterruptedException
     {
         // Build a game control object.  Note -- I changed

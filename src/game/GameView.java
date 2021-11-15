@@ -21,45 +21,35 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class GameView extends JPanel implements MouseListener, ActionListener
+public class GameView extends JPanel implements MouseListener
 {
-    private double percentTraveled;
-    private Timer timer;
+
 
     // This constant is needed to get rid of a warning.  It won't matter to us.
 
     private static final long serialVersionUID = 1L;
 
     ResourceLoader loader;
+    GameState state;
 
     /**
      * Our GameView constructor.  The 'view' is the GUI (Graphical User Interface) and
      * this constructor builds a JFrame (window) so the user can see our 'drawing'.
      */
-    public GameView ()
+    public GameView (GameState state)
     {
+        this.state = state;
+
         // Load the backdrop image and path from the resources folder.  Feel free to alter this,
         // but be careful to make sure your resources folder is a java package in the src
         // portion of your project.
 
-        try
-        {
-            loader = ResourceLoader.getLoader();
-            loader.getImage("path_1.jpg");
+        loader = ResourceLoader.getLoader();
+        loader.getImage("path_1.jpg");
 
-            percentTraveled = 0;
+        loader.getPath("path.txt");
 
-            loader.getPath("path.txt");
-
-            this.addMouseListener(this);
-            timer = new Timer(17, this);
-            timer.start();
-        }
-        catch (Exception e)
-        {
-            System.out.println("Could not load the backdrop or path.");
-            System.exit(0);
-        }
+        this.addMouseListener(this);
 
         // Build the frame.  The frame object represents the application 'window'.
 
@@ -98,15 +88,7 @@ public class GameView extends JPanel implements MouseListener, ActionListener
      */
     public void paint (Graphics g)
     {
-        // Draw the backdrop.
-
-        g.drawImage(loader.getImage("path_1.jpg"), 0, 0, null);
-        g.setColor(new Color(255, 0, 0));
-        Path.drawPath(g);
-
-        Point pos = Path.getPathPosition(percentTraveled);
-        g.drawOval((int)pos.getX() - 12, (int)pos.getY() - 12, 25, 25);
-
+        state.drawAll(g);
     }
 
     /* The following methods are required for mouse events.  I've collapsed some of them to
@@ -125,18 +107,4 @@ public class GameView extends JPanel implements MouseListener, ActionListener
     public void mouseEntered(MouseEvent e) { }
     public void mouseExited(MouseEvent e) { }
 
-    /* The following method is required for action events.  You'll need to set up
-     * the timer in the constructor in order for this method to be automatically
-     * called.  Re-add the missing code in the constructor.
-     */
-
-    public void actionPerformed(ActionEvent e)
-    {
-        percentTraveled += 0.001;
-        if(percentTraveled > 1)
-        {
-            percentTraveled = 0;
-        }
-        repaint();
-    }
 }

@@ -4,6 +4,8 @@ import java.awt.*;
 
 public class Backdrop implements Animatable{
 
+    private Point p;
+
     @Override
     public void update(double timeElapsed) {
 
@@ -11,6 +13,7 @@ public class Backdrop implements Animatable{
 
     @Override
     public void draw(Graphics g) {
+        g.drawImage(ResourceLoader.getLoader().getImage("path_1.jpg"), 0, 0, null);
 
     }
 }
