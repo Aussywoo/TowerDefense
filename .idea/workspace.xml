@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Configuring .gitignore">
-      <change afterPath="$PROJECT_DIR$/src/game/Effect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Enemy1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Enemy2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/Tower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Aus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Bryce.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Menu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Path.java" afterDir="false" />
-    </list>
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Configuring .gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636998717370</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Configuring .gitignore">
+      <created>1637373679691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637373679691</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,8 +176,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Checkpoint 2 work" />
-    <MESSAGE value="Configuring .gitignore" />
     <MESSAGE value="Finished Checkpoint #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #2" />
+    <MESSAGE value="Configuring .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuring .gitignore" />
   </component>
 </project>
