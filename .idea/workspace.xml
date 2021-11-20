@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Configuring .gitignore" />
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes.">
+      <change beforePath="$PROJECT_DIR$/src/game/TowerDefense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerDefense.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637373679691</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes.">
+      <created>1637373796658</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1637373796658</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +187,7 @@
     <MESSAGE value="Checkpoint 2 work" />
     <MESSAGE value="Finished Checkpoint #2" />
     <MESSAGE value="Configuring .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuring .gitignore" />
+    <MESSAGE value="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes." />
   </component>
 </project>
