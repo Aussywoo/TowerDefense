@@ -40,15 +40,6 @@ public class GameView extends JPanel implements MouseListener
     {
         this.state = state;
 
-        // Load the backdrop image and path from the resources folder.  Feel free to alter this,
-        // but be careful to make sure your resources folder is a java package in the src
-        // portion of your project.
-
-        loader = ResourceLoader.getLoader();
-        loader.getImage("path_1.jpg");
-
-        loader.getPath("path.txt");
-
         this.addMouseListener(this);
 
         // Build the frame.  The frame object represents the application 'window'.
@@ -64,7 +55,7 @@ public class GameView extends JPanel implements MouseListener
 
         // Set the size of 'this' panel to match the size of the backdrop.
 
-        Dimension d = new Dimension(600, 600);
+        Dimension d = new Dimension(946, 600);
         this.setMinimumSize(d);
         this.setPreferredSize(d);
         this.setMaximumSize(d);

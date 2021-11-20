@@ -21,6 +21,7 @@ public class Path {
      */
     public Path(Scanner s) {
 
+
         Scanner pathFile = s;
         coordNum = pathFile.nextInt();
 

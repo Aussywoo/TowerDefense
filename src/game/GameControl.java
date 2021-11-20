@@ -25,8 +25,15 @@ public class GameControl implements Runnable, ActionListener {
 
         state = new GameState();
         state.addGameObject(new Backdrop());
-        state.addGameObject(new BlueCircle(0, state));
-        state.addGameObject(new BlueCircle(0.5, state));
+
+        //Add a Menu
+
+        state.addGameObject(new Menu(state));
+
+        //Add an Aus and Bryce
+
+        state.addGameObject(new Enemy1(.2, state));
+        state.addGameObject(new Enemy2(0, state));
 
         // Build a view.  Note that the view builds it's own frame, etc.  All the work is there.
         view = new GameView(state);

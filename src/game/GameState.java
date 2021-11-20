@@ -8,6 +8,9 @@ public class GameState
 {
     //Fields
     List<Animatable> gameObjects;
+    boolean gameOver;
+    int credits, score, lives;
+    int mouseX, mouseY;
 
     public GameState()
     {
