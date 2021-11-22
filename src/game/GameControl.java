@@ -13,6 +13,7 @@ public class GameControl implements Runnable, ActionListener {
     GameView view;
     GameState state;
     private double percentTraveled;
+    private int count = 1;
 
     public GameControl() {
         // I moved all the code into a function named 'run' below.
@@ -30,11 +31,6 @@ public class GameControl implements Runnable, ActionListener {
 
         state.addGameObject(new Menu(state));
 
-        //Add an Aus and Bryce
-
-        state.addGameObject(new Enemy1(.2, state));
-        state.addGameObject(new Enemy2(0, state));
-
         // Build a view.  Note that the view builds it's own frame, etc.  All the work is there.
         view = new GameView(state);
 
@@ -51,14 +47,25 @@ public class GameControl implements Runnable, ActionListener {
      * @param e
      */
     public void actionPerformed(ActionEvent e) {
-        //Animation 'loop' -- not an actual loop,
-        //but we recognize that this function is called
-        //Update the game objects
 
+        //Add enemies
+        count++;
+        if (count == 30 || count == 60)
+        {
+            state.addGameObject(new Enemy1(0, state));
+        }
+        if (count == 90) {
+            state.addGameObject(new Enemy2(0, state));
+            count = 0;
+        }
+
+        //Update the game objects
         state.updateAll();
 
         //Draw the game objects
-
         view.repaint();
+
+        //Consume Mouse Click
+        state.consumeMouseClick();
     }
 }

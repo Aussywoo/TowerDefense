@@ -8,10 +8,7 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +18,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class GameView extends JPanel implements MouseListener
+public class GameView extends JPanel implements MouseListener, MouseMotionListener
 {
 
 
@@ -39,8 +36,6 @@ public class GameView extends JPanel implements MouseListener
     public GameView (GameState state)
     {
         this.state = state;
-
-        this.addMouseListener(this);
 
         // Build the frame.  The frame object represents the application 'window'.
 
@@ -68,6 +63,9 @@ public class GameView extends JPanel implements MouseListener
         // This panel can send mouse events to any object that wants to 'listen' to those
         // events.  I've removed the lines of code for the mouse listener and timer,
         // feel free to re-add them as needed.
+
+        this.addMouseListener(this);
+        this.addMouseMotionListener(this);
     }
 
     /**
@@ -90,7 +88,7 @@ public class GameView extends JPanel implements MouseListener
 
     public void mousePressed(MouseEvent e)
     {
-        // I've removed the line of code here -- feel free to re-add it.
+        state.setMouseClicked();
     }
 
     public void mouseClicked(MouseEvent e) { }
@@ -98,4 +96,13 @@ public class GameView extends JPanel implements MouseListener
     public void mouseEntered(MouseEvent e) { }
     public void mouseExited(MouseEvent e) { }
 
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        state.setMouseLocation(e.getX(), e.getY());
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        state.setMouseLocation(e.getX(), e.getY());
+    }
 }

@@ -4,12 +4,8 @@ import java.awt.*;
 
 public class Enemy2 extends Enemy {
 
-    private Point p;
-    private GameState state;
-
     public Enemy2 (double p, GameState state){
-        this.state = state;
-        position = p;
+        super(p, state);
     }
 
     @Override
