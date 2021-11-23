@@ -4,6 +4,7 @@
 package game;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,9 +12,10 @@ public class GameControl implements Runnable, ActionListener {
 
     //Fields
     GameView view;
-    GameState state;
+    static GameState state;
     private double percentTraveled;
     private int count = 1;
+    private static Timer timer;
 
     public GameControl() {
         // I moved all the code into a function named 'run' below.
@@ -35,7 +37,7 @@ public class GameControl implements Runnable, ActionListener {
         view = new GameView(state);
 
         // Start the animation loop.
-        Timer timer = new Timer(16, this);
+        timer = new Timer(16, this);
         timer.start();
 
     }
@@ -67,5 +69,11 @@ public class GameControl implements Runnable, ActionListener {
 
         //Consume Mouse Click
         state.consumeMouseClick();
+    }
+
+    public static void endGame(Graphics g) {
+        g.setColor(Color.GREEN);
+        timer.stop();
+        g.drawString("Game Over", 100, 100);
     }
 }

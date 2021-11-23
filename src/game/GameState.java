@@ -24,7 +24,7 @@ public class GameState
         gameOver = false;
         credits = 100;
         score = 0;
-        lives = 10;
+        lives = 1;
         mouseClicked = false;
         mouseX = mouseY = 0;
     }
@@ -101,6 +101,7 @@ public class GameState
         }
         //if game ends, put up "Game Over" and stop program
         else {
+            //GameControl.endGame();
         }
     }
 
@@ -115,6 +116,8 @@ public class GameState
             a.draw(g);
         objectsToAdd.clear();
         objectsToRemove.clear();
+        if(isGameOver())
+            GameControl.endGame(g);
     }
 
 

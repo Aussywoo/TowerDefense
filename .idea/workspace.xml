@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/game/TowerMenuScience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Science.jpg" afterDir="false" />
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint #2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637374128458</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finished Checkpoint #2">
+      <created>1637706275731</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637706275731</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,10 +214,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Checkpoint 2 work" />
-    <MESSAGE value="Finished Checkpoint #2" />
     <MESSAGE value="Configuring .gitignore" />
     <MESSAGE value="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes." />
     <MESSAGE value="Testing eclispse sdkfj" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing eclispse sdkfj" />
+    <MESSAGE value="Finished Checkpoint #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #2" />
   </component>
 </project>
