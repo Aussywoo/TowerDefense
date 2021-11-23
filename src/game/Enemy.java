@@ -6,14 +6,16 @@ public abstract class Enemy implements Animatable {
     protected double position;
     protected Point p;
     protected GameState state;
+    protected double speed;
 
-    public Enemy(double p, GameState state) {
+    public Enemy(double p, GameState state, double speed) {
         this.state = state;
         position = p;
+        this.speed = speed;
     }
 
     public void update(double timeElapsed) {
-        position = position + 0.01;
+        position = position + speed;
         if(position > 1){
             position = 1;
             state.removeGameObject(this);

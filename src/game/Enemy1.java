@@ -7,7 +7,7 @@ public class Enemy1 extends Enemy {
 
 
     public Enemy1 (double p, GameState state){
-        super(p, state);
+        super(p, state, 0.01);
     }
 
     @Override

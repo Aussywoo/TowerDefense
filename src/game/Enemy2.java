@@ -5,7 +5,7 @@ import java.awt.*;
 public class Enemy2 extends Enemy {
 
     public Enemy2 (double p, GameState state){
-        super(p, state);
+        super(p, state, 0.02);
     }
 
     @Override

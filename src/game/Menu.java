@@ -17,6 +17,7 @@ public class Menu implements Animatable{
     public void update(double timeElapsed) {
         if(!objectsAdded) {
             state.addGameObjectToAdd(new TowerMenuMath(state, 700, 450));
+            state.addGameObjectToAdd(new TowerMenuScience(state, 800, 450));
             objectsAdded = true;
         }
 
