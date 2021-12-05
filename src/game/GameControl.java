@@ -16,6 +16,7 @@ public class GameControl implements Runnable, ActionListener {
     private double percentTraveled;
     private int count = 1;
     private static Timer timer;
+    boolean t = true;
 
     public GameControl() {
         // I moved all the code into a function named 'run' below.
@@ -60,6 +61,14 @@ public class GameControl implements Runnable, ActionListener {
             state.addGameObject(new Enemy2(0, state));
             count = 0;
         }
+
+        //For testing purposes, add only one enemy
+//        if(t) {
+//            state.addGameObject(new Enemy1(0, state));
+//            t = false;
+//        }
+
+
 
         //Update the game objects
         state.updateAll();

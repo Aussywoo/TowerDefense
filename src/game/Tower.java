@@ -1,5 +1,7 @@
 package game;
 
+import java.awt.*;
+
 public abstract class Tower implements Animatable {
     GameState state;
     int x, y;
@@ -7,6 +9,10 @@ public abstract class Tower implements Animatable {
         this.state = state;
         this.x = x;
         this.y = y;
+    }
+
+    public Point getPos() {
+        return new Point((int)x, (int)y);
     }
 
 }

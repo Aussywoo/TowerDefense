@@ -24,7 +24,7 @@ public class GameState
         gameOver = false;
         credits = 100;
         score = 0;
-        lives = 1;
+        lives = 10;
         mouseClicked = false;
         mouseX = mouseY = 0;
     }
@@ -68,8 +68,16 @@ public class GameState
         mouseClicked = true;
     }
 
+    public void addScore(int num) {
+        score += num;
+    }
+
     public int getScore() {
         return score;
+    }
+
+    public void addCredits(int num) {
+        credits += num;
     }
 
     public int getCredits() {
@@ -86,6 +94,28 @@ public class GameState
 
     public void endGame() {
         gameOver = true;
+    }
+
+    public Enemy findNearestEnemy(Point p) {
+        Enemy closest = null;
+        for(Animatable a : gameObjects) {
+            if (a instanceof Enemy) {
+                Enemy e = (Enemy) a;
+
+                if (closest == null) {
+                    closest = e;
+                }
+                else {
+                    double currentDist = e.getPos().distance(p);
+                    double currentClosest = closest.getPos().distance(p);
+
+                    if(currentDist < currentClosest) {
+                        closest = e;
+                    }
+                }
+            }
+        }
+        return closest;
     }
 
     public boolean isGameOver() {

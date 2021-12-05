@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint #2">
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint 3">
+      <change afterPath="$PROJECT_DIR$/src/game/TowerEffect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Effect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Enemy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Enemy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScience.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -219,5 +226,16 @@
     <MESSAGE value="Testing eclispse sdkfj" />
     <MESSAGE value="Finished Checkpoint #2" />
     <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/TowerDefense.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
