@@ -20,7 +20,8 @@ public class TowerScience extends Tower {
 
     public void update(double timeElapsed) {
         count++;
-        if (count >= 10 && state.findNearestEnemy(pos) != null) {
+        nearest = state.findNearestEnemy(pos);
+        if (count >= 5 && nearest != null && nearest.getPos().distance(this.getPos()) < 400) {
             nearest = state.findNearestEnemy(pos);
             state.addGameObjectToAdd(new TowerScienceEffect(pos, nearest, state));
             count = 0;

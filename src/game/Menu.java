@@ -25,10 +25,10 @@ public class Menu implements Animatable{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(ResourceLoader.getLoader().getImage("Menu.png"), 600, 0, null);
-        g.drawString("" + state.getScore(), 700, 300);
-        g.drawString("" + state.getCredits(), 700, 200);
-        g.drawString("" + state.getLives(), 700, 400);
+        g.drawImage(ResourceLoader.getLoader().getImage("menu.png"), 600, 0, null);
+        g.drawString("Score: " + state.getScore(), 700, 300);
+        g.drawString("Credits: " + state.getCredits(), 700, 200);
+        g.drawString("Lives: " + state.getLives(), 700, 400);
 
     }
 }

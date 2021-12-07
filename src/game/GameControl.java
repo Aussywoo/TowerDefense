@@ -14,6 +14,7 @@ public class GameControl implements Runnable, ActionListener {
     GameView view;
     static GameState state;
     private int count = 1;
+    private double count2 = 1;
     private static Timer timer;
     boolean t = true;
 
@@ -35,12 +36,13 @@ public class GameControl implements Runnable, ActionListener {
 
         // Build a view.  Note that the view builds it's own frame, etc.  All the work is there.
         view = new GameView(state);
-
-        // Start the animation loop after click.
-
         timer = new Timer(16, this);
         timer.start();
+    }
 
+    public void start() {
+        // Start the animation loop after click.
+        timer.start();
     }
 
     /**
@@ -52,12 +54,18 @@ public class GameControl implements Runnable, ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         //Add enemies
-        count++;
-        if (count == 30 || count == 60)
+        if(state.firstClick) {
+            count++;
+        }
+
+        if(count2 < 29) {
+            count2+=0.05;
+        }
+        if (count == 30-((int)Math.floor(count2)) || count == 60-((int)Math.floor(count2)))
         {
             state.addGameObject(new Enemy1(0, state));
         }
-        if (count == 90) {
+        if (count == 90-((int)Math.floor(count2))) {
             state.addGameObject(new Enemy2(0, state));
             count = 0;
         }
@@ -71,7 +79,8 @@ public class GameControl implements Runnable, ActionListener {
 
 
         //Update the game objects
-        state.updateAll();
+        if(state.firstClick)
+            state.updateAll();
 
         //Draw the game objects
         view.repaint();

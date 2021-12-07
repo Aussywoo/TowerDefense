@@ -78,6 +78,8 @@ public class GameView extends JPanel implements MouseListener, MouseMotionListen
     public void paint (Graphics g)
     {
         state.drawAll(g);
+        if(!state.firstClick)
+            g.drawString("Click to Start", 468, 300);
     }
 
     /* The following methods are required for mouse events.  I've collapsed some of them to

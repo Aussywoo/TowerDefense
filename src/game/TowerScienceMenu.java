@@ -17,7 +17,7 @@ public class TowerScienceMenu extends Tower {
     public void update(double timeElapsed) {
         if (state.getMouseX() >= x && state.getMouseX() < x + 100 &&
                 state.getMouseY() >= y && state.getMouseY() < y + 67 &&
-                state.isMouseClicked() && !state.movingTowerExists())
+                state.isMouseClicked() && !state.movingTowerExists() && state.getCredits() >= 15)
         {
             state.addGameObjectToAdd(new TowerScienceMoving(state, state.getMouseX(), state.getMouseY()));
         }

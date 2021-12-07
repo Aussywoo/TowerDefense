@@ -11,6 +11,7 @@ public class GameState
     List<Animatable> objectsToRemove;
     List<Animatable> objectsToAdd;
     private boolean gameOver, mouseClicked, movingTowerExists;
+    public boolean firstClick;
     private int credits, score, lives;
     private int mouseX, mouseY;
 
@@ -61,6 +62,7 @@ public class GameState
     }
 
     public boolean isMouseClicked() {
+
         return mouseClicked;
     }
 
@@ -69,6 +71,9 @@ public class GameState
     }
 
     public void setMouseClicked() {
+        if(!firstClick) {
+            firstClick = true;
+        }
         mouseClicked = true;
     }
 

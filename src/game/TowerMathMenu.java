@@ -17,7 +17,7 @@ public class TowerMathMenu extends Tower {
     public void update(double timeElapsed) {
         if (state.getMouseX() >= x && state.getMouseX() < x + 100 &&
                 state.getMouseY() >= y && state.getMouseY() < y + 67 &&
-                state.isMouseClicked() && !state.movingTowerExists())
+                state.isMouseClicked() && !state.movingTowerExists() && state.getCredits() >= 35)
         {
             state.addGameObjectToAdd(new TowerMathMoving(state, state.getMouseX(), state.getMouseY()));
         }

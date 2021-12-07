@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Checkpoint 4: Added tower effect, health, credits, score">
-      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/divide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/flask.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/path_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/plus.png" afterDir="false" />
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint #3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Backdrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Backdrop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceEffect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/TowerMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMenuMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMenuScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMovingMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMoving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMovingScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMoving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMathMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/TowerScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/Menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/menu.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maste\IdeaProjects\TowerDefense\src\resources" />
       <recent name="C:\Users\Aus\IdeaProjects\TowerDefense\src\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

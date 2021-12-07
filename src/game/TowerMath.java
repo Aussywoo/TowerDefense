@@ -20,8 +20,8 @@ public class TowerMath extends Tower {
 
     public void update(double timeElapsed) {
         count++;
-        if (count >= 5 && state.findNearestEnemy(pos) != null) {
-            nearest = state.findNearestEnemy(pos);
+        nearest = state.findNearestEnemy(pos);
+        if (count >= 5 && nearest != null && nearest.getPos().distance(this.getPos()) < 200) {
             double rand = Math.random();
             if(rand < 0.33) {
                 state.addGameObjectToAdd(new TowerMathEffect(pos, nearest, state));
