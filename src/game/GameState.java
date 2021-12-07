@@ -10,7 +10,7 @@ public class GameState
     List<Animatable> gameObjects;
     List<Animatable> objectsToRemove;
     List<Animatable> objectsToAdd;
-    private boolean gameOver, mouseClicked;
+    private boolean gameOver, mouseClicked, movingTowerExists;
     private int credits, score, lives;
     private int mouseX, mouseY;
 
@@ -32,6 +32,10 @@ public class GameState
     public void addGameObject (Animatable a)
     {
         gameObjects.add(a);
+    }
+
+    public List<Animatable> getGameObjects() {
+        return gameObjects;
     }
 
     public void addGameObjectToAdd(Animatable a) {
@@ -80,6 +84,10 @@ public class GameState
         credits += num;
     }
 
+    public void removeCredits(int num) {
+        credits -= num;
+    }
+
     public int getCredits() {
         return credits;
     }
@@ -116,6 +124,14 @@ public class GameState
             }
         }
         return closest;
+    }
+
+    public boolean movingTowerExists() {
+        return movingTowerExists;
+    }
+
+    public void setMovingTowerExists(boolean a) {
+        movingTowerExists = a;
     }
 
     public boolean isGameOver() {

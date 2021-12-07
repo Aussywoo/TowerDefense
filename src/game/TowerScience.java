@@ -15,13 +15,14 @@ public class TowerScience extends Tower {
         this.x = x;
         this.y = y;
         pos = new Point(x, y);
+        state.removeCredits(15);
     }
 
     public void update(double timeElapsed) {
         count++;
-        if (count == 10 && state.findNearestEnemy(pos) != null) {
+        if (count >= 10 && state.findNearestEnemy(pos) != null) {
             nearest = state.findNearestEnemy(pos);
-            state.addGameObjectToAdd(new TowerEffect(pos, nearest, state));
+            state.addGameObjectToAdd(new TowerScienceEffect(pos, nearest, state));
             count = 0;
         }
 
@@ -33,8 +34,8 @@ public class TowerScience extends Tower {
         g.drawImage(ResourceLoader.getLoader().getImage("Science.jpg"), x, y, null);
 
         //Draw line to nearest enemy
-        if(state.findNearestEnemy(getPos()) != null) {
-            g.drawLine(x, y, (int)state.findNearestEnemy(getPos()).getPos().getX(), (int)state.findNearestEnemy(getPos()).getPos().getY());
-        }
+//        if(state.findNearestEnemy(getPos()) != null) {
+//            g.drawLine(x, y, (int)state.findNearestEnemy(getPos()).getPos().getX(), (int)state.findNearestEnemy(getPos()).getPos().getY());
+//        }
     }
 }

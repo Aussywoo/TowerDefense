@@ -13,7 +13,7 @@ public class Backdrop implements Animatable{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(ResourceLoader.getLoader().getImage("path_1.jpg"), 0, 0, null);
+        g.drawImage(ResourceLoader.getLoader().getImage("path_1.png"), 0, 0, null);
 
     }
 }

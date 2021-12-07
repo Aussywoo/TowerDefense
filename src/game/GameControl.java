@@ -13,7 +13,6 @@ public class GameControl implements Runnable, ActionListener {
     //Fields
     GameView view;
     static GameState state;
-    private double percentTraveled;
     private int count = 1;
     private static Timer timer;
     boolean t = true;
@@ -37,7 +36,8 @@ public class GameControl implements Runnable, ActionListener {
         // Build a view.  Note that the view builds it's own frame, etc.  All the work is there.
         view = new GameView(state);
 
-        // Start the animation loop.
+        // Start the animation loop after click.
+
         timer = new Timer(16, this);
         timer.start();
 

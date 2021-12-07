@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint 3">
-      <change afterPath="$PROJECT_DIR$/src/game/TowerEffect.java" afterDir="false" />
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Checkpoint 4: Added tower effect, health, credits, score">
+      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/TowerMathEffect3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/divide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/flask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/path_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/plus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Backdrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Backdrop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMenuMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMenuScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMovingMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMoving.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/TowerMovingScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMoving.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/TowerScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/path.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +77,8 @@
       <recent name="C:\Users\Aus\IdeaProjects\TowerDefense\src\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maste\IdeaProjects\TowerDefense\src\resources" />
       <recent name="C:\Users\Aus\IdeaProjects\TowerDefense\src\resources" />
+      <recent name="C:\Users\maste\IdeaProjects\TowerDefense\src\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -203,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637706275731</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Checkpoint 4: Added tower effect, health, credits, score">
+      <created>1638667252703</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638667252703</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,17 +244,7 @@
     <MESSAGE value="Checkpoint 3: Added Enemy, Tower, and Effect abstract classes. Also added 2 unique enemy classes." />
     <MESSAGE value="Testing eclispse sdkfj" />
     <MESSAGE value="Finished Checkpoint #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/TowerDefense.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Checkpoint 4: Added tower effect, health, credits, score" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint 4: Added tower effect, health, credits, score" />
   </component>
 </project>
