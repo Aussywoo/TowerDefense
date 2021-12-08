@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Finished Checkpoint #4">
-      <change afterPath="$PROJECT_DIR$/src/game/EnemyBryceMinions.java" afterDir="false" />
+    <list default="true" id="76764c89-80a8-45aa-87dc-3a0157913de6" name="Changes" comment="Added Javadoc and Made Bryce split in two when killed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Animatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Animatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Backdrop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Backdrop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Effect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Effect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/EnemyAus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Enemy2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/EnemyBryce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Path.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/ResourceLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ResourceLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMathEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathEffectMinus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMathEffect2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathEffectPlus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMathEffect3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathEffectDivide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMathMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerMathMoving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerMathMoving.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerScience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerScienceEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/TowerScienceMoving.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/TowerScienceMoving.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638917817125</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Javadoc and Made Bryce split in two when killed">
+      <created>1638921977755</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1638921977755</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +240,7 @@
     <MESSAGE value="Finished Checkpoint #2" />
     <MESSAGE value="Checkpoint 4: Added tower effect, health, credits, score" />
     <MESSAGE value="Finished Checkpoint #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Checkpoint #4" />
+    <MESSAGE value="Added Javadoc and Made Bryce split in two when killed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Javadoc and Made Bryce split in two when killed" />
   </component>
 </project>
