@@ -3,6 +3,10 @@ package game;
 import java.awt.*;
 import java.util.List;
 
+/**
+ * Created after the menu math tower is clicked on. Will create a math tower if placed in a valid spot. Otherwise,
+ * clicking while this object exists will simply remove it.
+ */
 public class TowerMathMoving extends Tower {
     GameState state;
     int x, y;
@@ -17,6 +21,7 @@ public class TowerMathMoving extends Tower {
         state.setMovingTowerExists(true);
     }
 
+    @Override
     public void update(double timeElapsed) {
         if (state.getMouseX() >= 0 && state.getMouseX() < 600 &&
                 state.getMouseY() >= 0 && state.getMouseY() < 600 &&
@@ -29,6 +34,7 @@ public class TowerMathMoving extends Tower {
         else if (state.isMouseClicked()) {
             state.removeGameObject(this);
             state.setMovingTowerExists(false);
+
         }
     }
 

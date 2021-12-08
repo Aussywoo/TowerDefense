@@ -5,6 +5,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.awt.Graphics;
 
+/**
+ * Reads coordinate points from the path.txt file and stores values in a list.
+ */
 public class Path {
     private static int coordNum;
     private static ArrayList<Point> coords = new ArrayList<Point>();

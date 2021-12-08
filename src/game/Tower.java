@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Represents an object that will defend against enemies. Daughter classes will have unique features.
+ */
 public abstract class Tower implements Animatable {
     GameState state;
     int x, y;
@@ -12,10 +15,18 @@ public abstract class Tower implements Animatable {
         this.y = y;
     }
 
+    /**
+     * Returns current position.
+     * @return
+     */
     public Point getPos() {
         return new Point((int)x, (int)y);
     }
 
+    /**
+     * Checks to see if the position of the object is on the path.
+     * @return
+     */
     public boolean isOnPath() {
         isOnPath = false;
         double count = 0;

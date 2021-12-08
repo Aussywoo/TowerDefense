@@ -2,10 +2,13 @@ package game;
 
 import java.awt.*;
 
-public class TowerMathEffect2 extends Effect {
+/**
+ * The division sign projectile for the Math tower.
+ */
+public class TowerMathEffectPlus extends Effect {
     private double position;
 
-    public TowerMathEffect2(Point a, Enemy e, GameState state) {
+    public TowerMathEffectPlus(Point a, Enemy e, GameState state) {
         super(a, e, state);
     }
 

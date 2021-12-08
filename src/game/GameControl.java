@@ -1,6 +1,3 @@
-/**
- * You will eventually need to add header comments to this file.
- */
 package game;
 
 import javax.swing.*;
@@ -8,6 +5,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * GameControl is responsible for drawing in the backdrop and menu at the start -- along
+ * with initial health, credits, and score, as well and updating and redrawing all
+ * objects per timer tick.
+ */
 public class GameControl implements Runnable, ActionListener {
 
     //Fields
@@ -18,11 +20,13 @@ public class GameControl implements Runnable, ActionListener {
     private static Timer timer;
     boolean t = true;
 
-    public GameControl() {
-        // I moved all the code into a function named 'run' below.
-    }
+//    public GameControl() {
+//        // I moved all the code into a function named 'run' below.
+//    }
 
-
+    /**
+     * Builds the initial game objects. This includes the state, menu, and timer objects.
+     */
     public void run() {
 
         // Build the game state.
@@ -37,11 +41,6 @@ public class GameControl implements Runnable, ActionListener {
         // Build a view.  Note that the view builds it's own frame, etc.  All the work is there.
         view = new GameView(state);
         timer = new Timer(16, this);
-        timer.start();
-    }
-
-    public void start() {
-        // Start the animation loop after click.
         timer.start();
     }
 
@@ -63,10 +62,10 @@ public class GameControl implements Runnable, ActionListener {
         }
         if (count == 30-((int)Math.floor(count2)) || count == 60-((int)Math.floor(count2)))
         {
-            state.addGameObject(new Enemy1(0, state));
+            state.addGameObject(new EnemyAus(0, state));
         }
         if (count == 90-((int)Math.floor(count2))) {
-            state.addGameObject(new Enemy2(0, state));
+            state.addGameObject(new EnemyBryce(0, state));
             count = 0;
         }
 
@@ -89,6 +88,10 @@ public class GameControl implements Runnable, ActionListener {
         state.consumeMouseClick();
     }
 
+    /**
+     * Stops the global timer and puts up "Game Over" in green text.
+     * @param g
+     */
     public static void endGame(Graphics g) {
         g.setColor(Color.GREEN);
         timer.stop();

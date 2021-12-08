@@ -2,9 +2,12 @@ package game;
 
 import java.awt.*;
 
-public class Enemy1 extends Enemy {
+/**
+ * An Enemy object that uses "Aus.jpg" with 5 health and slower speed.
+ */
+public class EnemyAus extends Enemy {
 
-    public Enemy1 (double p, GameState state){
+    public EnemyAus(double p, GameState state){
         super(p, state, 0.005, 5);
     }
 

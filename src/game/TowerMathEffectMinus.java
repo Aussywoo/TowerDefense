@@ -2,10 +2,13 @@ package game;
 
 import java.awt.*;
 
-public class TowerMathEffect extends Effect {
+/**
+ * The minus sign projectile for the Math tower.
+ */
+public class TowerMathEffectMinus extends Effect {
     private double position;
 
-    public TowerMathEffect(Point a, Enemy e, GameState state) {
+    public TowerMathEffectMinus(Point a, Enemy e, GameState state) {
         super(a, e, state);
     }
 

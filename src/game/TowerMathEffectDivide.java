@@ -2,10 +2,10 @@ package game;
 
 import java.awt.*;
 
-public class TowerMathEffect3 extends Effect {
+public class TowerMathEffectDivide extends Effect {
     private double position;
 
-    public TowerMathEffect3(Point a, Enemy e, GameState state) {
+    public TowerMathEffectDivide(Point a, Enemy e, GameState state) {
         super(a, e, state);
     }
 

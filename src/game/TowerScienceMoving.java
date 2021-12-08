@@ -2,6 +2,10 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Created after the menu science tower is clicked on. Will create a science tower if placed in a valid spot. Otherwise,
+ * clicking while this object exists will simply remove it.
+ */
 public class TowerScienceMoving extends Tower {
     GameState state;
     int x, y;

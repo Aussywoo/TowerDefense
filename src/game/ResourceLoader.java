@@ -8,6 +8,10 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Allows for efficient retrieval of files from the resources folder. Once a file has been retrieved once, it will
+ * stay in cache.
+ */
 public class ResourceLoader {
     private static BufferedImage image;
     private static HashMap imageMap;
@@ -20,6 +24,12 @@ public class ResourceLoader {
 
     }
 
+    /**
+     * Loads up an image and stores it in a list. Checks to see if image has already been loaded -- if so, it just
+     * returns it from the list.
+     * @param fileName The image filename to be retrieved.
+     * @return
+     */
     public BufferedImage getImage(String fileName) {
         // Load the backdrop image and path from the resources folder.  Feel free to alter this,
         // but be careful to make sure your resources folder is a java package in the src
@@ -48,6 +58,12 @@ public class ResourceLoader {
         return image;
     }
 
+    /**
+     * Loads up a path and stores it in a list. Checks to see if ipathmage has already been loaded -- if so, it just
+     * returns it from the list.
+     * @param fileName The path filename to be retrieved.
+     * @return
+     */
     public Path getPath(String fileName) {
 
         //Check to see if image has been previously loaded

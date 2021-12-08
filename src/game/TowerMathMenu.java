@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * The menu object for the math towers. Will create a moving object when clicked on if there are enough credits.
+ */
 public class TowerMathMenu extends Tower {
     GameState state;
     int x, y;

@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Uses the resource loader to obtain the backdrop (image of the path). Draws the path.
+ */
 public class Backdrop implements Animatable{
 
     private Point p;

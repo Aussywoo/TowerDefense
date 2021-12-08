@@ -2,6 +2,10 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Represents an object that will travel on the path. Contains lives, score, credits and will be removed when it has
+ * been hit by a projectile a sufficient number of times.
+ */
 public abstract class Enemy implements Animatable {
     protected double position;
     protected Point p;
@@ -9,6 +13,13 @@ public abstract class Enemy implements Animatable {
     protected double speed;
     protected int currentHealth, health;
 
+    /**
+     * Creates an Enemy object at a given position, with a given speed and health.
+     * @param position
+     * @param state
+     * @param speed
+     * @param health
+     */
     public Enemy(double position, GameState state, double speed, int health) {
         p = ResourceLoader.getLoader().getPath("path.txt").getPathPosition(position);
         this.state = state;

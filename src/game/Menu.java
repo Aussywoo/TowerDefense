@@ -2,6 +2,10 @@ package game;
 
 import java.awt.*;
 
+/**
+ * Spawns on the right side of the screen and contains the menu tower objects as well as displays the score, lives
+ * and credits.
+ */
 public class Menu implements Animatable{
 
     private Point p;

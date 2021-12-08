@@ -3,21 +3,15 @@
  */
 package game;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
 import java.awt.event.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Scanner;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.Timer;
 
+/**
+ * Created the jFrame panel for the game to exist in. Keeps track of mouse actions.
+ */
 public class GameView extends JPanel implements MouseListener, MouseMotionListener
 {
 
@@ -88,6 +82,10 @@ public class GameView extends JPanel implements MouseListener, MouseMotionListen
      * constructor.
      */
 
+    /**
+     * Tells the state object that the mouse has been clicked.
+     * @param e
+     */
     public void mousePressed(MouseEvent e)
     {
         state.setMouseClicked();

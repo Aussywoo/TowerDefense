@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * One of the two unique tower types. Shoots faster but has shorter range.
+ */
 public class TowerScience extends Tower {
     GameState state;
     int x, y;
@@ -9,6 +12,12 @@ public class TowerScience extends Tower {
     Enemy nearest;
     Point pos;
 
+    /**
+     * Places a math tower at a given position and removes 15 credits.
+     * @param state
+     * @param x
+     * @param y
+     */
     public TowerScience(GameState state, int x, int y) {
         super(state, x, y);
         this.state = state;

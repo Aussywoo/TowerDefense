@@ -2,6 +2,9 @@ package game;
 
 import java.awt.*;
 
+/**
+ * The projectile for science towers.
+ */
 public class TowerScienceEffect extends Effect {
     private double position;
 
