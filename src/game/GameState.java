@@ -30,9 +30,9 @@ public class GameState
         objectsToAdd = new ArrayList<Animatable>();
 
         gameOver = false;
-        credits = 100;
+        credits = 50;
         score = 0;
-        lives = 10;
+        lives = 15;
         mouseClicked = false;
         mouseX = mouseY = 0;
     }

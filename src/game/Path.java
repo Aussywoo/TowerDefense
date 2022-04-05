@@ -24,12 +24,10 @@ public class Path {
      */
     public Path(Scanner s) {
 
-
-        Scanner pathFile = s;
-        coordNum = pathFile.nextInt();
+        coordNum = s.nextInt();
 
         for(int i = 0; i < coordNum; i++) {
-            coords.add(new Point(pathFile.nextInt(), pathFile.nextInt()));
+            coords.add(new Point(s.nextInt(), s.nextInt()));
         }
     }
 
